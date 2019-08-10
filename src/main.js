@@ -5,6 +5,8 @@ import {getSort} from './components/sort';
 import {getForm} from './components/form';
 import {getCard} from './components/card';
 
+const CARDS_AMOUNT = 3;
+
 const renderElement = function (selector, place, content, count = 1) {
   for (let i = 0; i < count; i++) {
     let container = document.querySelector(selector);
@@ -18,4 +20,4 @@ renderElement(`.trip-main__trip-controls`, `beforeend`, getMenu());
 renderElement(`.trip-main__trip-controls`, `beforeend`, getFilters());
 renderElement(`.trip-events`, `beforeend`, getSort());
 renderElement(`.trip-events`, `beforeend`, getForm());
-renderElement(`.trip-events`, `beforeend`, getCard(), 3);
+renderElement(`.trip-events`, `beforeend`, getCard(), CARDS_AMOUNT);
