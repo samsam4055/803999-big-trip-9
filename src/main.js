@@ -16,7 +16,7 @@ const renderElement = function (selector, place, content, count = 1) {
 };
 
 renderElement(`.trip-main__trip-info`, `afterbegin`, getTripInfo());
-renderElement(`.trip-main__trip-controls`, `beforeend`, getMenu());
+renderElement(`.trip-main__trip-controls > h2`, `afterend`, getMenu());
 renderElement(`.trip-main__trip-controls`, `beforeend`, getFilters());
 renderElement(`.trip-events`, `beforeend`, getSort());
 renderElement(`.trip-events`, `beforeend`, getForm());
