@@ -1,9 +1,9 @@
-import {getTripInfo} from './components/trip-info';
-import {getMenu} from './components/menu';
-import {getFilters} from './components/filters';
-import {getSort} from './components/sort';
-import {getForm} from './components/form';
-import {getCard} from './components/card';
+import {getTripInfo} from `./components/trip-info`;
+import {getMenu} from `./components/menu`;
+import {getFilters} from `./components/filters`;
+import {getSort} from `./components/sort`;
+import {getForm} from `./components/form`;
+import {getCard} from `./components/card`;
 
 const CARDS_AMOUNT = 3;
 
